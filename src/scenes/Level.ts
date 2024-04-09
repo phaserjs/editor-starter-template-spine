@@ -4,8 +4,8 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { MoveInSceneActionScript } from "@phasereditor2d/scripts-simple-animations";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
+import { MoveInSceneActionScript } from "@phaserjs/editor-scripts-simple-animations";
 import { SkinsAndAnimationBoundsProvider } from "@esotericsoftware/spine-phaser";
 import { SpineGameObject } from "@esotericsoftware/spine-phaser";
 import StartAnimationComp from "../components/StartAnimationComp";

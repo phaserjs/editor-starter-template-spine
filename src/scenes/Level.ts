@@ -27,7 +27,7 @@ export default class Level extends Phaser.Scene {
 		// text
 		const text = this.add.text(640, 576, "", {});
 		text.setOrigin(0.5, 0.5);
-		text.text = "Phaser 3 + Spine + Phaser Editor 2D\nWebpack + TypeScript";
+		text.text = "Phaser 3 + Spine + Phaser Editor v4\nWebpack + TypeScript";
 		text.setStyle({ "align": "center", "fontFamily": "Arial", "fontSize": "3em" });
 
 		// onAwakeScript

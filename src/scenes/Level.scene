@@ -20,7 +20,7 @@
             "y": 576,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Phaser 3 + Spine + Phaser Editor 2D\nWebpack + TypeScript",
+            "text": "Phaser 3 + Spine + Phaser Editor v4\nWebpack + TypeScript",
             "align": "center",
             "fontFamily": "Arial",
             "fontSize": "3em",

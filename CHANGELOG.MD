@@ -1,6 +1,8 @@
 # Changelog
 
-## v2.0.1 - Sep 24 
+## v2.0.1 - Sep 24, 2024
+
+* Updates to the new script libs "base" and "quick".
 
 ## v2.0.0 - Apr 9, 2024
 

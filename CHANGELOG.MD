@@ -1,5 +1,7 @@
 # Changelog
 
+## v2.0.1 - Sep 24 
+
 ## v2.0.0 - Apr 9, 2024
 
 * Migrates to Phaser Editor v4.

@@ -14,8 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "@esotericsoftware/spine-phaser": "^4.2.35",
-    "@phaserjs/editor-scripts-core": "^2.0.0",
-    "@phaserjs/editor-scripts-simple-animations": "^2.0.0",
+    "@phaserjs/editor-scripts-base": "^1.0.0",
+    "@phaserjs/editor-scripts-quick": "^1.0.0",
     "phaser": "^3.80.1"
   },
   "devDependencies": {

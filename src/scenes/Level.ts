@@ -3,6 +3,8 @@
 
 /* START OF COMPILED CODE */
 
+import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
+import { MoveInSceneActionScript } from "@phaserjs/editor-scripts-quick";
 import { SkinsAndAnimationBoundsProvider } from "@esotericsoftware/spine-phaser";
 import { SpineGameObject } from "@esotericsoftware/spine-phaser";
 import StartAnimationComp from "../components/StartAnimationComp";
@@ -27,6 +29,12 @@ export default class Level extends Phaser.Scene {
 		text.text = "Phaser 3 + Spine + Phaser Editor v4\nWebpack + TypeScript";
 		text.setStyle({ "align": "center", "fontFamily": "Arial", "fontSize": "3em" });
 
+		// onAwakeScript
+		const onAwakeScript = new OnAwakeScript(text);
+
+		// moveInSceneActionScript
+		const moveInSceneActionScript = new MoveInSceneActionScript(onAwakeScript);
+
 		// goblin
 		const goblin = this.add.spine(454, 480, "goblins", "goblins-atlas", new SkinsAndAnimationBoundsProvider(null, ["goblin"]));
 		goblin.skeleton.setSkinByName("goblin");
@@ -35,6 +43,9 @@ export default class Level extends Phaser.Scene {
 		const goblinGirl = this.add.spine(800, 480, "goblins", "goblins-atlas", new SkinsAndAnimationBoundsProvider(null, ["goblingirl"]));
 		goblinGirl.skeleton.setSkinByName("goblingirl");
 		goblinGirl.scaleX = -1;
+
+		// moveInSceneActionScript (prefab fields)
+		moveInSceneActionScript.from = "BOTTOM";
 
 		// goblin (components)
 		const goblinStartAnimationComp = new StartAnimationComp(goblin);
